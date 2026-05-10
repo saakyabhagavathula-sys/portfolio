@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saakya - Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: #0d1117; color: #e6edf3; line-height: 1.6; }
+    .container { max-width: 900px; margin: auto; padding: 20px; }
+    header { text-align: center; padding: 60px 0; }
+    h1 { font-size: 2.5rem; color: #58a6ff; }
+    h2 { color: #58a6ff; border-bottom: 2px solid #30363d; padding-bottom: 10px; margin: 40px 0 20px; }
+    .card { background: #161b22; padding: 20px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #30363d; }
+    .skills span { background: #21262d; padding: 8px 12px; border-radius: 20px; display: inline-block; margin: 5px; border: 1px solid #30363d; }
+    .project { transition: transform 0.2s; }
+    .project:hover { transform: translateY(-5px); }
+    button { background: #238636; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-size: 1rem; }
+    button:hover { background: #2ea043; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { text-align: center; padding: 40px 0; color: #7d8590; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Hi, I'm Saakya</h1>
+      <p>Data Science Student | Automation & AI Enthusiast</p>
+      <button onclick="scrollToSection('contact')">Contact Me</button>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>I'm Saakya, a first-year Data Science student who just completed my 2nd semester. I'm very passionate about using data and automation to solve real-world problems. I love experimenting with AI, no-code tools like n8n, and building intelligent workflows that actually work. Always excited to learn, build, and share what I create.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card skills">
+        <span>Python</span> <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>n8n</span> <span>OpenAI API</span> <span>Google Sheets</span> <span>GitHub</span> <span>Data Analysis</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card project">
+        <h3>WhatsApp Automation Workflow</h3>
+        <p>Built an intelligent WhatsApp response system using n8n and OpenAI Chat Model. Added memory handling for context, automated message sending, and dynamic response logging in Google Sheets.</p>
+        <a href="https://github.com/yourusername" target="_blank">View on GitHub →</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:saakyabhagavathula@gmail.com">saakyabhagavathula@gmail.com</a></p>
+           <p>LinkedIn: <a href="https://linkedin.com/in/saakya-b" target="_blank">linkedin.com/in/saakya-b</a></p>
+   <p>GitHub: <a href="https://github.com/saakya" target="_blank">github.com/saakya</a></p>
+   <a href="https://github.com/yourusername" target="_blank">View on GitHub →</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Saakya</p>
+    </footer>
+  </div>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
